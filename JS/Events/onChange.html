@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+  </head>
+  <body>
+    <h1>Search Form</h1>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <form>
+            <div class="form-group">
+              <input
+                class="form-control"
+                type="text"
+                onchange="getData()"
+                id="search"
+              />
+            </div>
+          </form>
+          <p onmouseover="fun()">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat ab
+            quasi perferendis in dignissimos sequi qui dolores eum temporibus
+            ratione dolor tempora, suscipit quam iste placeat porro. Magni, ab
+            repellat? Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            Sunt vitae porro, beatae possimus mollitia nulla adipisci fuga
+            voluptatibus quas alias quibusdam, atque eos reprehenderit
+            temporibus animi dignissimos nobis labore modi!
+          </p>
+        </div>
+      </div>
+    </div>
+    <script>
+      function getData() {
+        let x = document.getElementById("search");
+        alert(x.value);
+      }
+      function fun() {
+        alert("paragraph");
+      }
+    </script>
+  </body>
+</html>
