@@ -3,7 +3,7 @@ class Test {
     console.log("GM");
   }
 
-  wish() {
+  wish = () =>{
     console.log("Hello, PSA");
   }
   wish() {
@@ -20,5 +20,5 @@ let obj_Satya = new Test();
 
 
 class Hello{
-    
+
 }
