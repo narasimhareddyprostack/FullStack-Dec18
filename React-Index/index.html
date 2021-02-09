@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      crossorigin
+      src="https://unpkg.com/react@16/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"
+    ></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="text/babel">
+      function Welcome(props) {
+        return (
+          <h5>
+            User Data...{props.user} {props.user2}
+          </h5>
+        );
+      }
+      function App() {
+        let name = "Sandeep";
+        return (
+          <>
+            <h1> Welcome to PSA</h1>
+            <Welcome user={name} user2="Satya" />
+          </>
+        );
+      }
+      ReactDOM.render(<App />, document.getElementById("root"));
+    </script>
+  </body>
+</html>
