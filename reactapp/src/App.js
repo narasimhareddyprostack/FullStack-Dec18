@@ -1,12 +1,10 @@
-import Order from "./Order";
-import Footer from "./Footer";
-let App = () => {
+import React from "react";
+import Navbar from "./Comm/Navbar";
+function App() {
   return (
-    <>
-      <h1> Hello, GM</h1> <p> Welcome to PSA</p>
-      <Order />
-      <Footer />
-    </>
+    <React.Fragment>
+      <Navbar />
+    </React.Fragment>
   );
-};
+}
 export default App;
